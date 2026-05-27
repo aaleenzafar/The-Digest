@@ -1,4 +1,8 @@
+/// <reference types="vite/client" />
+
 export function VideoBackground() {
+  const bgVideo = new URL('../video/animation_of_flowing_current_202605251650.mp4', import.meta.url).href
+
   return (
     <div
       style={{
@@ -22,7 +26,7 @@ export function VideoBackground() {
           objectFit: 'cover',
           display: 'block',
         }}
-        src="/src/video/animation_of_flowing_current_202605251650.mp4"
+        src={bgVideo}
       />
     </div>
   )
