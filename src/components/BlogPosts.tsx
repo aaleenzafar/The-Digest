@@ -30,31 +30,32 @@ export function BlogPosts() {
   ]
 
   return (
-    <section id="blog" className="min-h-screen px-6 md:px-12 lg:px-16 py-24 relative text-white">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-5xl font-normal tracking-tight mb-4">
-          Latest Issues
-        </h2>
-        <p className="text-gray-300 text-lg">
-          Recent workflows, tutorials, and breakdowns.
-        </p>
-      </div>
+    <section id="blog" className="px-4 md:px-12 lg:px-16 py-16 md:py-24 relative text-white min-h-screen flex flex-col justify-center">
+      <div className="w-full">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-2xl md:text-3xl lg:text-5xl font-normal tracking-tight mb-3 md:mb-4">
+            Latest Issues
+          </h2>
+          <p className="text-gray-300 text-sm md:text-base lg:text-lg">
+            Recent workflows, tutorials, and breakdowns.
+          </p>
+        </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
         {posts.map((post, idx) => (
           <div
             key={idx}
             className="liquid-glass border border-white/20 rounded-2xl overflow-hidden"
           >
             <div className={`h-1 ${post.tagColor}`}></div>
-            <div className="px-6 py-6">
+            <div className="px-5 md:px-6 py-5 md:py-6">
               <p className="text-xs uppercase tracking-widest text-gray-400 mb-3">
                 {post.tag}
               </p>
-              <h3 className="text-xl font-medium text-white mb-3 leading-snug">
+              <h3 className="text-lg md:text-xl font-medium text-white mb-3 leading-snug">
                 {post.title}
               </h3>
-              <p className="text-sm text-gray-400 leading-relaxed mb-6">
+              <p className="text-xs md:text-sm text-gray-400 leading-relaxed mb-4 md:mb-6">
                 {post.excerpt}
               </p>
               <div className="flex justify-between text-xs text-gray-500 mb-4">
@@ -63,13 +64,14 @@ export function BlogPosts() {
               </div>
               <a
                 href="#"
-                className="text-white text-sm hover:underline inline-block"
+                className="text-white text-xs md:text-sm hover:underline inline-block"
               >
                 Read More →
               </a>
             </div>
           </div>
         ))}
+        </div>
       </div>
     </section>
   )

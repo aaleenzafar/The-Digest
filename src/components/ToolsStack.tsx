@@ -35,18 +35,18 @@ export function ToolsStack() {
   ]
 
   return (
-    <section id="tools" className="min-h-screen bg-black flex items-center px-6 md:px-12 lg:px-16 py-24 relative text-white">
+    <section id="tools" className="bg-black px-4 md:px-12 lg:px-16 py-16 md:py-24 relative text-white min-h-screen flex flex-col justify-center">
       <div className="w-full">
         <div className="text-center mb-4">
-          <h2 className="text-3xl md:text-5xl font-normal tracking-tight">
+          <h2 className="text-2xl md:text-3xl lg:text-5xl font-normal tracking-tight">
             Tools We Actually Use
           </h2>
         </div>
-        <p className="text-gray-300 text-lg text-center mb-16">
+        <p className="text-gray-300 text-sm md:text-base lg:text-lg text-center mb-12 md:mb-16">
           Every tutorial is built with real, mostly free tools.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {tools.map((tool, idx) => (
             <div
               key={idx}
