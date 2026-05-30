@@ -3,7 +3,7 @@ import { FadeIn } from './FadeIn'
 
 export function Hero() {
   return (
-    <section id="top" className="relative text-white px-4 md:px-12 lg:px-16 pt-24 pb-10 min-h-[100dvh] flex flex-col justify-end lg:grid lg:grid-cols-2 lg:items-center">
+    <section id="top" className="relative text-white px-4 md:px-12 lg:px-16 pt-24 pb-10 min-h-[100dvh] flex flex-col justify-center lg:justify-end lg:grid lg:grid-cols-2 lg:items-center">
       <div className="w-full">
         {/* Left Column */}
         <div>
