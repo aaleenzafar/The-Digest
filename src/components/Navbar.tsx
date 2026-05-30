@@ -24,9 +24,9 @@ export function Navbar() {
         {/* Center Links - Hidden on mobile */}
         <div className="hidden md:flex gap-8">
           {[
-            { label: 'Issues', href: '#blog' },
             { label: 'Tutorials', href: '#use-cases' },
             { label: 'Tools', href: '#tools' },
+            { label: 'Issues', href: '#blog' },
             { label: 'Subscribe', href: '#newsletter' },
           ].map((link) => (
             <a
@@ -72,9 +72,9 @@ export function Navbar() {
         <div className="md:hidden liquid-glass rounded-xl mt-2 px-6 py-4">
           <div className="space-y-0">
             {[
-              { label: 'Issues', href: '#blog' },
               { label: 'Tutorials', href: '#use-cases' },
               { label: 'Tools', href: '#tools' },
+              { label: 'Issues', href: '#blog' },
               { label: 'Subscribe', href: '#newsletter' },
             ].map((link) => (
               <a
